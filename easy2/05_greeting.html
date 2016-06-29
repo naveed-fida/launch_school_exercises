@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Greeting and Yelling</title>
+  <script>
+    var name = prompt("What is your name?"),
+        greeting = "Hello " + name + ".";
+
+    if (name.endsWith('!')) {
+      greeting = greeting.slice(0, -2) + ". Why are we screaming?"
+      greeting = greeting.toUpperCase();
+    }
+
+    console.log(greeting);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

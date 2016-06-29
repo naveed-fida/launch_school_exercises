@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Madlibs</title>
+</head>
+<body>
+  <script>
+    var noun = prompt('Enter a noun:'),
+        verb = prompt('Enter a verb'),
+        adjective = prompt('Enter an adjective.'),
+        adverb = prompt('Enter an adverb'),
+        sentences = [];
+
+    sentences[0] = "Do you " + verb + " your " + adjective + " " + noun + " " + adverb + "? That's hilarious!";
+    sentences[1] = "The " + adjective + " " + noun + " " + verb + "s " + adverb + " over the lazy dog.";
+    sentences[2] = "The " + noun + " " + adverb + " " + verb + "s up " + adjective + " Joe's turtle.";
+    var rand = Math.floor(Math.random() * sentences.length);
+    console.log(sentences[rand]);
+  </script>
+</body>
+</html>

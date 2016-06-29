@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sum of Product of Consecutive Numbers</title>
+</head>
+<body>
+  <script>
+    function computeProduct(num) {
+      var output = 1;
+      for (var i = 2; i <= num; i++) {
+        output *= i;
+      }
+      return output;
+    }
+
+    function computeSum(num) {
+      output = 0;
+      for (var i = 1; i <= num; i++) {
+        output += i;
+      }
+      return output;
+    }
+
+    var int = +prompt("Please enter an integer greater than 0"),
+        op = prompt("Please enter 'p' for product and 's' for sum");
+
+    if (op === 'p') {
+      console.log("The product of integers from 1 to " + int + " is " + computeProduct(int))      
+    } else if (op === 's') {
+      console.log("The sum of integers from 1 to " + int + " is " + computeSum(int));
+    } else {
+      console.log('Wrong Operation');
+    }
+
+  </script>
+</body>
+</html>

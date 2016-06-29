@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>How big is the room</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  
+</body>
+  <script>
+    var length = +(window.prompt("Enter the length of the room in meters")),
+        width = +(window.prompt("Enter the width of the room in meters")),
+        sq_meter_to_sq_feet = 10.7639,
+        square_meters = Math.round(length * width),
+        square_feet = Math.round(square_meters * sq_meter_to_sq_feet);
+
+    console.log("The area of the room is "+ square_meters + "square meters (" + square_feet + " square feet)");
+  </script>
+</html>

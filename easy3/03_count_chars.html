@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Count Number of Characters</title>
+</head>
+<body>
+  <script>
+    var phrase = prompt("Please write word or multiple words: "),
+        words = phrase.split(' ');
+    phrase_length = words.reduce(function(numchars, word) {
+      return numchars + word.length;
+    }, 0);
+
+    console.log("There are " + phrase_length + " characters in " + phrase);
+  </script>
+</body>
+</html>

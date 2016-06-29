@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tip Calculator</title>
+</head>
+<body>
+  <script>
+    var bill = +(prompt("What is the bill?")),
+        percent = +(prompt("How much is the tip percentage?")),
+        tip = Math.round(bill * (percent / 100)),
+        total = bill + tip;
+    console.log("The tip is: " + tip);
+    console.log("The total is: " + total);
+  </script>
+</body>
+</html>

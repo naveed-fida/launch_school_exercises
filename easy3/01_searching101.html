@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Searching 101</title>
+</head>
+<body>
+  <script>
+    var numbers = [];
+
+    numbers.push(+prompt("Enter the first Number"));
+    numbers.push(+prompt("Enter the second Number"));
+    numbers.push(+prompt("Enter the 3rd number"));
+    numbers.push(+prompt("Enter the 4th Number"));
+    numbers.push(+prompt("Enter the 5th Number"));
+
+    var last_number = +prompt("Enter the last Number");
+    if (numbers.includes(last_number)) {
+      console.log("the number " + last_number + " appears in " + numbers);
+    } else {
+      console.log("the number " + last_number + " does not appear in " + numbers)
+    }
+
+
+  </script>
+</body>
+</html>
